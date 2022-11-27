@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-In/Sign-Up</title>
+
+        <!--FAVICON-->
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+
+    <img class='cursor' id="cursor" src="images/logo.png" alt="">
+
+    <a href="https://gogreen-five.vercel.app/"><h1 class="home-button">BACK TO HOME</h1></a>
+
+    <div class="sign-in">
+        <div class="form1" id="sign-in">
+            <div class="left-side">
+                <h1>WELCOME BACK !</h1>
+
+                <p>To connect with us, login with<br>personal info</p>
+
+                
+                <button class="sign-up-button" type="button" onclick="signInForm()">SIGN UP</button>
+                
+            </div>
+
+            <div class="right-side">
+                <h1>Sign in to GoGreen</h1>
+
+                <div class="icons">
+                    <a class="facebook" href=""><img src="images/fb-blue.png" alt=""></a>
+                    <a class="google" href=""><img src="images/google-colored.png" alt=""></a>
+                </div>
+
+                <h2>or use your created username</h2>
+
+                <form action="store.html">
+
+                    <input class="input USERNAME" type="text" id="username" name="username" autocomplete='off' spellcheck='false' autocorrect='off' required> 
+                    <input class="input PASSWORD" type="password" id="password" name="password" autocomplete='off' spellcheck='false' autocorrect='off' value="" required>
+
+                    <button class="sign-in-button" type="submit">SIGN IN</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="form2" id="sign-up">
+            <div class="left-side">
+                <h1>Hello, Friend !</h1>
+
+                <p>Create an account, to start<br>your journey with us</p>
+
+                <a href="">
+                    <button class="sign-in-button" type="button"  onclick="signUpForm()">SIGN IN</button>
+                </a>
+            </div>
+
+            <div class="right-side">
+                <h1>Create Account</h1>
+
+                <div class="icons">
+                    <a class="facebook" href=""><img src="images/fb-white.png" alt=""></a>
+                    <a class="google" href=""><img src="images/google-white.png" alt=""></a>
+                </div>
+
+                <h2>create username for registration</h2>
+
+                <form action="">
+
+                    <input class="input USERNAME" type="text" id="username" name="username" autocomplete='off' spellcheck='false' autocorrect='off' required> 
+                    <input class="input PASSWORD" type="password" id="password" name="password" autocomplete='off' spellcheck='false' autocorrect='off' value="" required>
+
+                    <button class="sign-up-button" type="submit">SIGN UP</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--MENUBAR SCRIPT-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const links = document.getElementById('links');
+
+        burger.addEventListener('click', () => {
+            links.classList.toggle('active');
+        })
+
+        $("#links").click(() => {
+            links.classList.remove('active');
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }
+            else{
+                $("header").removeClass("black");
+            }
+        });
+    </script>
+
+
+    <script>
+
+        function signInForm(){
+            document.getElementById('sign-up').style.display="flex";
+            document.getElementById('sign-in').style.display="none";
+        }
+    </script>
+
+    <script>
+
+        function signUpForm(){
+            document.getElementById('sign-in').style.display="flex";
+            document.getElementById('sign-up').style.display="none";
+        }
+    </script>
+
+
+    <script>
+        var cursor = document.getElementById("cursor");
+        document.body.addEventListener("mousemove", function(e) {
+        cursor.style.left = e.clientX + "px",
+            cursor.style.top = e.clientY + "px";
+        });
+    </script>
+</body>
+</html>

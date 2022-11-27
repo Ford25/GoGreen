@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+body .cursor {
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  background-color: transparent;
+  z-index: 10000;
+  height: 60px;
+  width: 50px;
+  transition: all 300ms ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #505050;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #005613;
+  border-radius: 10px;
+}
+
+.home-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+
+.sign-in {
+  width: 100%;
+  height: 100vh;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/form-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.sign-in .form1 {
+  width: auto;
+  height: 591px;
+  background: #FFFFFF;
+  box-shadow: 4px 5px 12px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+}
+.sign-in .form1 .left-side {
+  width: 442px;
+  height: 100%;
+  background: linear-gradient(154.91deg, #088D38 0%, #3BBA2C 100%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in .form1 .left-side h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+.sign-in .form1 .left-side p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-bottom: 53px;
+}
+.sign-in .form1 .left-side .sign-up-button {
+  cursor: pointer;
+  width: 229px;
+  height: 58px;
+  left: 341px;
+  top: 590px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+}
+.sign-in .form1 .right-side {
+  width: 528px;
+  height: 591px;
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in .form1 .right-side h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.035em;
+  color: #149736;
+  margin-bottom: 32px;
+}
+.sign-in .form1 .right-side h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #149736;
+  margin-bottom: 19px;
+}
+.sign-in .form1 .right-side .icons {
+  margin-bottom: 60px;
+}
+.sign-in .form1 .right-side .icons .facebook {
+  margin-right: 18px;
+}
+.sign-in .form1 .right-side form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in .form1 .right-side form .input {
+  border: none;
+  width: 368.85px;
+  height: 54.09px;
+  background: #E7E8E7;
+  outline: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.035em;
+  color: #303030;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+.sign-in .form1 .right-side form .USERNAME {
+  margin-bottom: 10px;
+}
+.sign-in .form1 .right-side .sign-in-button {
+  width: 229px;
+  height: 58px;
+  background: linear-gradient(93.67deg, #0A8F38 0%, #3AB92D 100%);
+  border-radius: 50px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-top: 36px;
+  cursor: pointer;
+}
+.sign-in .form2 {
+  width: auto;
+  height: 591px;
+  background: #FFFFFF;
+  box-shadow: 4px 5px 12px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: none;
+}
+.sign-in .form2 .left-side {
+  width: 442px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in .form2 .left-side h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.035em;
+  color: #149736;
+  margin-bottom: 18px;
+}
+.sign-in .form2 .left-side p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #149736;
+  margin-bottom: 53px;
+}
+.sign-in .form2 .left-side a {
+  text-decoration: none;
+}
+.sign-in .form2 .left-side a .sign-in-button {
+  cursor: pointer;
+  width: 229px;
+  height: 58px;
+  left: 341px;
+  top: 590px;
+  background: linear-gradient(93.67deg, #0A8F38 0%, #3AB92D 100%);
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+.sign-in .form2 .right-side {
+  width: 528px;
+  height: 591px;
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(304.32deg, #0E9338 1.11%, #37B62E 72.89%);
+  box-shadow: 4px 5px 12px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.sign-in .form2 .right-side h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.sign-in .form2 .right-side h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+.sign-in .form2 .right-side .icons {
+  margin-bottom: 60px;
+}
+.sign-in .form2 .right-side .icons .facebook {
+  margin-right: 18px;
+}
+.sign-in .form2 .right-side form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in .form2 .right-side form .input {
+  border: none;
+  width: 368.85px;
+  height: 54.09px;
+  background: #E7E8E7;
+  outline: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.035em;
+  color: #303030;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+.sign-in .form2 .right-side form .USERNAME {
+  margin-bottom: 10px;
+}
+.sign-in .form2 .right-side .sign-up-button {
+  width: 229px;
+  height: 58px;
+  border: 2px solid #FFFFFF !important;
+  background-color: transparent;
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-top: 36px;
+  cursor: pointer;
+}
+
+.store {
+  width: 100%;
+  height: auto;
+  max-width: 2000px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.store .home-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.035em;
+  color: #000000;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+.store .background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.store h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 112px;
+  letter-spacing: -0.035em;
+  color: #000000;
+  text-shadow: -1px 4px 7px rgba(0, 0, 0, 0.63);
+}
+.store span {
+  color: #054200;
+}
+.store .plants-container {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.store .plants-container .plant {
+  width: 364px;
+  cursor: pointer;
+  height: auto;
+  background: linear-gradient(135deg, #038839 0%, #49C628 100%);
+  box-shadow: 0px 0px 54px -7px #054200;
+  border-radius: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 25px;
+}
+.store .plants-container .plant img {
+  width: 344px;
+  height: 231px;
+  border-radius: 100px 0px 0px 0px;
+}
+.store .plants-container .plant .name-and-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  margin-top: 15px;
+}
+.store .plants-container .plant .name-and-price h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin: 0px;
+}
+.store .plants-container .plant .name-and-price h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin: 0px;
+}
+.store .plants-container .plant p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.store .plants-container .plant button {
+  width: 364px;
+  height: 89px;
+  background: linear-gradient(170.91deg, #26851E 6.9%, rgba(5, 66, 0, 0) 102.77%);
+  border-radius: 0px 0px 100px 0px;
+  border: none;
+  margin-left: -10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

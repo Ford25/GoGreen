@@ -1,0 +1,59 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    
+    .cursor {
+        position: fixed;
+        transform: translateX(-50%) translateY(-50%);
+        pointer-events: none;
+        left: -100px;
+        top: 50%;
+        background-color: transparent;
+        z-index: 10000;
+        height: 60px;
+        width: 50px;
+        transition: all 300ms ease-out;
+    } 
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+  
+html::-webkit-scrollbar-track {
+    background: #505050;
+    border-radius: 10px;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #005613;  
+    border-radius: 10px;
+}
+
+.home-button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;    
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    cursor: pointer;
+    
+}
+
+@import "scss/sign-in-form";
+@import "scss/nav-section";
+@import "scss/store-page";
